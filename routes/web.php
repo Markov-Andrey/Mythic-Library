@@ -20,5 +20,3 @@ Route::get('/', function () {
 
 Route::get('/chatgpt', [ChatGPTController::class, 'index'])
     ->name('chatgpt.index');
-Route::post('/chatgpt/ask', [ChatGPTController::class, 'ask'])
-    ->name('chatgpt.ask');

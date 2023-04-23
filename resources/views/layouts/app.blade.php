@@ -6,7 +6,8 @@
 
         <link rel="icon" href="/image/icon/logo_mini.png" type="image/x-icon">
 
-        @vite('resources/css/app.css')
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+
         @livewireStyles
 
         <title>Mythic Library</title>
