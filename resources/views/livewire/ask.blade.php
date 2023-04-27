@@ -1,8 +1,8 @@
 <div class="container">
     @if($response)
         <h1 class="text-3xl font-bold">Response</h1>
-        <div class="p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
-            <p class="font-medium">{{ $response }}</p>
+        <div class="p-4 mb-4 text-sm rounded-lg bg-blue-50 dark:bg-gray-800">
+            <p class="font-medium text-blue-100 dark:text-blue-400">{{ $response }}</p>
         </div>
     @endif
     <form wire:submit.prevent="ask">
@@ -31,4 +31,30 @@
             </div>
         </div>
     </form>
+    <ul>
+        <li>Name
+            <input type="text">
+        </li>
+
+        <li>Size
+            <input type="text">
+        </li>
+
+        <label for="Alignment" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
+
+        <select id="Alignment" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option selected>Select Alignment</option>
+            <option value="LG">Lawful Good</option>
+            <option value="NG">Neutral Good</option>
+            <option value="CG">Chaotic Good</option>
+            <option value="LN">Lawful Neutral</option>
+            <option value="N">Neutral</option>
+            <option value="CN">Chaotic Neutral</option>
+            <option value="LE">Lawful Evil</option>
+            <option value="NE">Neutral Evil</option>
+            <option value="CE">Chaotic Evil</option>
+        </select>
+
+    </ul>
 </div>
+
