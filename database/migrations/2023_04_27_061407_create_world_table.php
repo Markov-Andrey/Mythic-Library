@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('new_world', 50);
             $table->string('short_description', 2000);
             $table->text('tags');
-
+            $table->string('world_name_slug', 50);
 
             $table->timestamps();
         });
