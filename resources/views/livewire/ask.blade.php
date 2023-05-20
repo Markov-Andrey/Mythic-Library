@@ -1,14 +1,27 @@
 <div class="container">
     @if($response)
         <h1 class="text-3xl font-bold">Response</h1>
-        <div class="p-4 mb-4 text-sm rounded-lg bg-blue-50 dark:bg-gray-800">
-            <p class="font-medium text-blue-100 dark:text-blue-400">{{ $response }}</p>
+        <div class="p-4 mb-4 text-sm rounded-lg bg-gray-800">
+            <div>Question:</div>
+            <div class="font-medium text-white">text</div>
+            <div>Answer:</div>
+            <div class="font-medium text-white">text</div>
+            @foreach($response as $text)
+                <div class="p-4 mb-4 text-sm rounded-lg bg-gray-800">
+                    <div class="text-white">Question:</div>
+                    <div class="font-medium text-white">{!! $text['question'] !!}</div>
+                </div>
+                <div class="p-4 mb-4 text-sm rounded-lg bg-gray-800">
+                    <div class="text-white">Answer:</div>
+                    <div class="font-medium text-white">{!! $text['answer'] !!}</div>
+                </div>
+            @endforeach
         </div>
     @endif
     <form wire:submit.prevent="ask">
         <label for="input-group-1" class="text-3xl font-bold">Your Ask</label>
-        <div class="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
-            <div class="px-4 py-2 bg-white rounded-t-lg dark:bg-gray-800">
+        <div class="w-full mb-4 border border-gray-600 rounded-lg bg-gray-700">
+            <div class="px-4 py-2 bg-white rounded-t-lg bg-gray-800">
                 <label for="comment" class="sr-only">Your comment</label>
                 <div class="relative mb-6">
                     <div class="absolute inset-y-0 left-0 flex items-start py-4 pl-3 pointer-events-none">

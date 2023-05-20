@@ -4,12 +4,12 @@ namespace App\Http\Livewire;
 
 use Illuminate\Support\Facades\Http;
 use Livewire\Component;
-use App\Actions\responseProcessing as Response;
 
 class Ask extends Component
 {
     public $prompt;
     public $response;
+    public $chatHistory = [];
 
     public function ask()
     {
@@ -29,8 +29,19 @@ class Ask extends Component
                 "temperature" => 1.0,
             ]);
         $text = $response->json()['choices'][0]['text'];
+        $text = nl2br(trim($text));
 
-        return Response::Process($text);
+        $this->saveChat($prompt, $text);
+
+        return $this->chatHistory;
+    }
+
+    private function saveChat($prompt, $text)
+    {
+        array_push($this->chatHistory, [
+            'question' => $prompt,
+            'answer' => $text,
+        ]);
     }
 
     public function render()

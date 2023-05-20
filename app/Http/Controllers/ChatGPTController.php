@@ -9,6 +9,6 @@ class ChatGPTController extends Controller
 {
     public function index()
     {
-        return view('chatgpt.index');
+        return view('chatGPT.index');
     }
 }
