@@ -1,6 +1,6 @@
-<img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/public/image/icon/logo_mini.png">
-
 #Mythic Library
+
+<img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/public/image/icon/logo_mini.png">
 
 <img height="32px" src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/Icons/1f1ec-1f1e7.png">
 
