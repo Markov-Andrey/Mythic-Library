@@ -1,4 +1,4 @@
-#Mythic Library
+# Mythic Library
 
 <img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/public/image/icon/logo_mini.png">
 
