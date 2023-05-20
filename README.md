@@ -12,7 +12,7 @@ _Проект для создателей новых вымышленных ми
 php-919830.png
 
 ## Technologies:
-<img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/Icons/php-919830.png"><img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/Icons/js-5968292.png"><img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/Icons/laravel-icon.png"><img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/Icons/livewire-ico.png"><img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/Icons/tailwind-ico.png"><img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/Icons/flowbite-logo.svg"><img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/Icons/chat-gpt-icon.png">
+<img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/Icons/php-919830.png"><img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/Icons/js-5968292.png"><img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/Icons/laravel-icon.png"><img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/Icons/livewire-ico.png"><img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/Icons/tailwind-ico.png"><img height="64px" src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/Icons/flowbite-logo.svg"><img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/Icons/chat-gpt-icon.png">
 
 ## Installation
 
