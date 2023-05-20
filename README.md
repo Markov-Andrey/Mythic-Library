@@ -1,16 +1,16 @@
 #Mythic Library
 
-<img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/readme/icons/1f1ec-1f1e7.png">
+<img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/icons/1f1ec-1f1e7.png">
 _A project conscious for the creators of new fictional worlds, incl. dnd masters.
 Create your own mini wikipedia with cross-sections, illustrations and maps. ChatGPT will help you create the world._
 
-<img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/readme/icons/1f1ec-1f1e7.png">
+<img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/icons/1f1ec-1f1e7.png">
 _Проект для создателей новых вымышленных миров, в т.ч. dnd-мастеров.
 Создайте свою собственную мини-википедию со связанными между собой статьями, иллюстрациями и картами. ChatGPT поможет вам создать мир._
 php-919830.png
 
 ## Technologies:
-- <img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/readme/icons/php-919830.png">
+- <img src="https://github.com/Markov-Andrey/Mythic-Library/blob/master/Readme/icons/php-919830.png">
 - JS
 - Laravel
 - Livewire
