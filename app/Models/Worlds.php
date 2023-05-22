@@ -9,6 +9,7 @@ class Worlds extends Model
     protected $fillable = [
         'new_world',
         'short_description',
+        'long_description',
         'tags',
         'world_name_slug',
     ];
@@ -42,7 +43,14 @@ class Worlds extends Model
      */
     public static function allWorld()
     {
-        return Worlds::all();
+        return Worlds::select(
+            'new_world',
+            'tags',
+            'world_name_slug',
+            'short_description',
+            'created_at',
+            'updated_at')
+            ->get();
     }
 
     /**

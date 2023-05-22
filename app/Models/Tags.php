@@ -11,10 +11,8 @@ class Tags extends Model
         'short_description',
     ];
 
-    public static function tagInfo($tagIds)
+    public static function tagInfo($ids)
     {
-        return self::whereIn('id', $tagIds)->get(['title', 'short_description']);
+        return self::whereIn('id', $ids)->get(['title', 'short_description']);
     }
-
-
 }

@@ -4,7 +4,6 @@
 <div>
     @if($worlds)
         <h1>All worlds:</h1>
-        <ul>
         @foreach ($worlds as $world)
             <div class="flex-row m-4">
                 <a href="{{ route('world', ['world_name_slug' => $world->world_name_slug]) }}" class="bg-slate-100 hover:bg-gray-300 block max-w-sm p-6 border border-gray-200 rounded-lg shadow">
@@ -21,7 +20,6 @@
                 </a>
             </div>
         @endforeach
-        </ul>
     @endif
 </div>
 @endsection
