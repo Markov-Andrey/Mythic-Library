@@ -19,6 +19,6 @@ class WorldController extends Controller
     {
         $world = Worlds::slug($world_name_slug);
 
-        return view('world', compact('world'));
+        return view('world.world', compact('world'));
     }
 }
