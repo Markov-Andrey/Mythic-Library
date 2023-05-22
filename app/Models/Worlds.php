@@ -11,5 +11,16 @@ class Worlds extends Model
         'new_world', //50
         'short_description', //2000
         'tags',
+        'world_name_slug',
     ];
+
+    public static function allWorld()
+    {
+        return Worlds::all();
+    }
+
+    public static function slug($world_name_slug)
+    {
+        return Worlds::where('world_name_slug', $world_name_slug)->first();
+    }
 }

@@ -15,12 +15,12 @@ use App\Http\Controllers\WorldController;
 |
 */
 
+
 Route::get('/chatgpt', [ChatGPTController::class, 'index'])
     ->name('chatgpt');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [WorldController::class, 'index'])
+    ->name('welcome');
 
-Route::get('/{world_name_slug}', [WorldController::class, 'index'])
+Route::get('/{world_name_slug}', [WorldController::class, 'world'])
     ->name('world');

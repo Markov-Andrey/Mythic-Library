@@ -8,9 +8,16 @@ use App\Models\Worlds;
 
 class WorldController extends Controller
 {
-    public function index($world_name_slug)
+    public function index()
     {
-        $world = Worlds::where('world_name_slug', $world_name_slug)->first();
+        $worlds = Worlds::allWorld();
+
+        return view('index', compact('worlds'));
+    }
+
+    public function world($world_name_slug)
+    {
+        $world = Worlds::slug($world_name_slug);
 
         return view('world', compact('world'));
     }
