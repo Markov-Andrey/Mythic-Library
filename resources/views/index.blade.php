@@ -15,13 +15,7 @@
                         </div>
                     </div>
                     @if($world->tags)
-                        <div class="flex flex-row py-2">
-                            @foreach($world->tags as $tag)
-                                <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-2 py-1.5 mr-1 mb-1">
-                                    {{ $tag }}
-                                </button>
-                            @endforeach
-                        </div>
+                        @include('partials.tags', ['tags' => $world->tags])
                     @endif
                     <p class="bg-white border rounded-lg shadow p-2 font-normal text-gray-700 dark:text-gray-400">{{ $world->short_description }}</p>
                 </a>

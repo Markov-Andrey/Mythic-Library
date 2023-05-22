@@ -14,6 +14,16 @@ class Worlds extends Model
     ];
 
     /**
+     * Relationship with tags.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function tags()
+    {
+        return $this->belongsToMany(Tags::class);
+    }
+
+    /**
      * Accessor for tags attribute.
      *
      * @param $value
@@ -21,21 +31,10 @@ class Worlds extends Model
      */
     public function getTagsAttribute($value)
     {
-        return $this->trimTags($value);
-    }
+        $tagIds = explode(",", $value);
+        $tags = Tags::tagInfo($tagIds);
 
-    /**
-     * Trim tags.
-     *
-     * @param $tags
-     * @return array
-     */
-    private function trimTags($tags)
-    {
-        $trimmedTags = explode(",", $tags);
-        $trimmedTags = array_map('trim', $trimmedTags);
-
-        return $trimmedTags;
+        return $tags;
     }
 
     /**
